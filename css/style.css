@@ -1,0 +1,22 @@
+/* style.css
+ * version 0.0
+ */
+#app { width: 752px; margin-left: auto; margin-right: auto; }
+
+#header { width: 752px; margin-left: auto; margin-right: auto; text-align: center; font-family: Arial; color: #1bcc12;  }
+#won { text-align: center; padding-top: 10%; padding-bottom: 10%; font-family: Arial; }
+#won h3 { font-size: 200%; color: #ffe700; text-shadow: 1px 1px 1px rgba(150, 150, 150, 1); margin-bottom: 8%; }
+#won strong { font-size: 160%; color: #abbca9; text-decoration: underline; cursor: pointer; }
+
+.fc, 
+.front, 
+.back { width: 186px; height: 186px; }
+.fc { perspective: 1000px; opacity: 1; float: left; }
+.flipper { transition: 0.6s; transform-style: preserve-3d; position: relative; }
+.front, 
+.back { backface-visibility: hidden; position: absolute; top: 0; left: 0; }
+.front { z-index: 2; transform: rotateY(0deg); }
+.back { transform: rotateY(180deg); }
+
+.fc.flip .flipper { transform: rotateY(180deg); }
+.fc.disabled .flipper { opacity: 0; }
