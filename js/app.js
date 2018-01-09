@@ -1,5 +1,5 @@
 /* app.js
- * version 0.0
+ * version 1.0
  * comments on russian, sorry ¯\_(ツ)_/¯ 
  */
 
